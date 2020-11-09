@@ -42,12 +42,20 @@ body{
   ;
   padding-top:100px;
 }
+
+.cdContent h2
+{
+  font-size: 85px;
+  text-align: center;
+  font-family: 'Merriweather';
+  color: #f1eeee;
+}
 .cdCardContainer{
   display: grid;
   width: 100%; /* remember to tell the div it can use either 100% or whatever you want */
   height:100%;
   grid-gap: 1em;
-  font-family: 'Lora';
+  font-family: 'Merriweather';
   grid-area: rightcd;
   grid-template-areas:
   "l1 r1"
@@ -82,57 +90,54 @@ body{
 
 .headerFlag
 {
-  display: flex;
-  background-image: url(img/rsz_websiteheader.jpg);
-  height: 80vh;
+  display: grid;
+  grid-template-columns: minmax(500px, 900px);
+  grid-template-rows: 70vh 15vh;
+  /*background-image: url(img/keyworkersHeroFlag2.png);*/
   width: 100%;
   background-size: cover;
   background-position: 50% 50% ;
+  background-color: #f1eeee;
   position: relative;
   grid-area:hd;
+  grid-template-areas:
+  "top"
+  "bot";
+  justify-content: center;
 }
 
-.headerFlag:before
+.headerFlag img{
+  position: relative;
+  display: block;
+  border-radius: 0.7em;
+  height: 60vh;
+  width: 100%;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.headerFlag p{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Merriweather';
+  height:15vh;
+  margin:0;
+}
+
+/*.headerFlag:before
 {
   content:"";
   background: #506075;
   width: 100%;
   opacity: 0.6;
-}
+}*/
 
-.headingFlag
-{
-  position: absolute;
-  top:30%;
-  left:0;
-  right:0;
-}
-.headingFlag h1
-{
-  text-align: center;
-  font-family: 'Playfair Display';
-  font-size: 60px;
-}
 
-.headingFlag img
-{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  filter: drop-shadow(1px 1px 0 #343434)
-          drop-shadow(-1px 1px 0 #343434)
-          drop-shadow(1px -1px 0 #343434)
-          drop-shadow(-1px -1px 0 #343434);
-  -webkit-filter: drop-shadow(1px 1px 0 #343434)
-                  drop-shadow(-1px 1px 0 #343434)
-                  drop-shadow(1px -1px 0 #343434)
-                  drop-shadow(-1px -1px 0 #343434);
-}
+
 
 .textContent
 {
-  font-family: 'Lora';
+  font-family: 'Merriweather';
   font-size: 24px;
   color: #ececec;
   padding:10px;
@@ -141,8 +146,8 @@ body{
 .mainContent h2
 {
   font-size: 80px;
-  font-family: 'Lora';
-  color: #a66243;
+  font-family: 'Merriweather';
+  color: #f1eeee;
   text-shadow:0px 8px 15px rgba(0, 0, 0, 0.1);
   align-self: start;
 }
@@ -160,7 +165,7 @@ body{
   height:370px;
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 0.5em;
-  font-family: 'Lora';
+  font-family: 'Merriweather';
 }
 
 .formContainer form {
@@ -212,7 +217,7 @@ textarea:focus{
     text-decoration: none;
     background:#c47207;
     color: #ffffff;
-    font-family: 'Lora';
+    font-family: 'Merriweather';
     font-size: 1rem;
     cursor: pointer;
     text-align: center;
@@ -252,7 +257,7 @@ button:focus {
 .footerCol
 {
   text-decoration: none;
-  font-family: 'Lora';
+  font-family: 'Merriweather';
   font-size: 13px;
   text-align: center;
   color:#ececec;
@@ -276,7 +281,7 @@ button:focus {
 .footerCol h2
 {
   font-size: 20px;
-  font-family: 'Playfair Display';
+  font-family: 'Merriweather';
   margin: 10px 10px;
 }
 .footerLogo
@@ -293,7 +298,7 @@ body.offcanvas-active{
 
 .navbar-custom{
   background-color:  #81c2c9;
-  font-family: 'Lora';
+  font-family: 'Merriweather';
 
 }
 
