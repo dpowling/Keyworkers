@@ -301,6 +301,11 @@ body.offcanvas-active{
   font-family: 'Merriweather';
 
 }
+.navbar /*need to make media queries for this  to adjust to each viewport */
+{
+  padding: 0.5em 20% !important;
+  min-height: 70px !important;
+}
 
 @media (max-width: 992px) {
   .offcanvas-header{ display:block; }
