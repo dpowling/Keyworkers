@@ -78,7 +78,7 @@ body{
   display: grid;
   grid-area: main;
   grid-template-columns: 350px 350px;
-  grid-template-rows: 50vh 50vh 50vh 50vh 50vh;
+  grid-template-rows: 50vh 50vh 50vh 50vh 60vh;
   grid-gap: 1em;
   grid-template-areas:
   "left0 right0"
@@ -162,7 +162,7 @@ body{
   display: flex;
   text-align: left;
   width: 100%; /* remember to tell the div it can use either 100% or whatever you want */
-  height:370px;
+  height:510px;
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 0.5em;
   font-family: 'Merriweather';
@@ -250,7 +250,7 @@ button:focus {
   grid-template-areas:
   ". left center right .";
   height: 200px;
-  background-color:#343434;
+  background-color:#767270;
   width:100%;
   padding-top: 40px;
 }
