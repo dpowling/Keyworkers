@@ -90,15 +90,14 @@ body{
   "left0 right0"
   "left1 right1"
   "left2 right2"
-  "left3 right3"
-  "left4 right4";
+  "left3 right3";
 }
 .mainContent2
 {
   display: grid;
   grid-area: main;
   grid-template-columns: 350px 350px;
-  grid-template-rows: 50vh 20vh 50vh 50vh 60vh;
+  grid-template-rows: 40vh 10vh 40vh 40vh 40vh;
   grid-gap: 1em;
   grid-template-areas:
   "left0 right0"
@@ -191,6 +190,15 @@ body{
   padding:10px;
   align-self: start;
 }
+.textContent2
+{
+  font-family: 'Merriweather';
+  font-size: 24px;
+  color: #ececec;
+  padding:10px;
+  align-self: center;
+  justify-self:center;
+}
 .mainContent h2
 {
   font-size: 80px;
@@ -206,6 +214,13 @@ body{
   color: #f1eeee;
   text-shadow:0px 8px 15px rgba(0, 0, 0, 0.1);
   align-self: start;
+}
+.mainContent2 img{
+  border-radius: 0.5rem;
+  height: 260px;
+  width: 260px;
+  justify-self:center;
+  align-self: center;
 }
 .imgCont
 {
