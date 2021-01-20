@@ -33,6 +33,18 @@ nav .navbar-nav li a{
   background-color: #81c2c9;
   justify-items: center;
 }
+.mainContainer2
+{
+  display: grid;
+  grid-template-columns: 1fr minmax(500px, 900px) 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+  "hd hd hd"
+  ". main ."
+  "ft ft ft";
+  background-color: #81c2c9;
+  justify-items: center;
+}
 
 .cdContent
 {
@@ -101,7 +113,7 @@ nav .navbar-nav li a{
   display: grid;
   grid-area: main;
   grid-template-columns: 350px 350px;
-  grid-template-rows: 40vh 10vh 40vh 40vh 40vh;
+  grid-template-rows: 64vh 15vh 40vh 40vh 40vh;
   grid-gap: 1em;
   grid-template-areas:
   "left0 right0"
@@ -205,6 +217,15 @@ nav .navbar-nav li a{
   align-self: center;
   justify-self:center;
 }
+.textContent3
+{
+  font-family: 'Merriweather';
+  font-size: 24px;
+  color: #ececec;
+  padding:10px;
+  align-self: start;
+  grid-area: 1 / span 2;
+}
 .mainContent h2
 {
   font-size: 80px;
@@ -229,6 +250,7 @@ nav .navbar-nav li a{
   color: #f1eeee;
   text-shadow:0px 8px 15px rgba(0, 0, 0, 0.1);
   align-self: start;
+  grid-area: 2 / span 2;
 }
 .mainContent2 img{
   border-radius: 0.5rem;
@@ -494,6 +516,18 @@ body.offcanvas-active{
     background-color: #81c2c9;
     justify-items: center;
   }
+  .mainContainer2
+  {
+    display: grid;
+    grid-template-columns: minmax(375px, 900px);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "hd"
+    "main"
+    "ft";
+    background-color: #81c2c9;
+    justify-items: center;
+  }
   .headerFlag
   {
     display: grid;
@@ -534,7 +568,7 @@ body.offcanvas-active{
     display: grid;
     grid-area: cd;
     grid-template-columns: minmax(375px, 900px);
-    grid-template-rows: 25vh 120vh;
+    grid-template-rows: 25vh 140vh;
     grid-gap: 1em;
     grid-template-areas:
     "leftcd"
@@ -585,7 +619,7 @@ body.offcanvas-active{
     display: grid;
     grid-area: main;
     grid-template-columns: minmax(375px, 900px);
-    grid-template-rows:30vh 40vh 35vh 40vh 40vh 25vh 65vh;
+    grid-template-rows:30vh 47vh 40vh 47vh 40vh 25vh 75vh;
     grid-gap: 0.5em;
     grid-template-areas:
     "left0"
@@ -610,21 +644,6 @@ body.offcanvas-active{
     padding: 10px 20px 10px 20px;
     margin:0;
   }
-  .mainConImg{
-
-  }
-  .mainConImg img{
-    border-radius: 0.5rem;
-    height: 280px;
-    width: 280px;
-    margin-top:20px;
-    justify-self: center;
-    align-self: right;
-  }
-
-  .mainConImg{
-
-  }
   .formContainer{
     display: flex;
     text-align: left;
@@ -635,24 +654,64 @@ body.offcanvas-active{
     font-family: 'Merriweather';
     justify-self:center;
   }
+  .aboutTitle{
+    display: grid;
+    grid-template-columns: minmax(375px, 900px);
+    grid-template-rows: 35vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50% ;
+    background-color: #f1eeee;
+    position: relative;
+    grid-area:hd;
+    grid-template-areas:
+    "top"
+    "bot";
+    justify-content: center;
+  }
+  .aboutTitle p{
+
+    margin-top:90px;
+
+  }
   .mainContent2
   {
     display: grid;
     grid-area: main;
-    grid-template-columns: minmax(375px, 560px);
-    grid-template-rows:repeat(8, 50vh);
+    grid-template-columns: minmax(375px, 900px);
+    grid-template-rows:100vh 30vh 50vh 30vh 50vh 30vh 50vh 30vh;
     grid-gap: 0.5em;
     grid-template-areas:
-    "left1"
-    "right1"
-    "right2"
+    "left0"
+    "right0"
     "left2"
+    "right2"
     "left3"
     "right3"
-    "right4"
     "left4"
+    "right4"
     ;
     padding-bottom: 2.3em;
+    padding-top:2.3em;
+  }
+  .mainContent2 h2
+  {
+    font-size: 60px;
+    font-family: 'Merriweather';
+    color: #f1eeee;
+    text-shadow:0px 8px 15px rgba(0, 0, 0, 0.1);
+    align-self: center;
+    justify-content: center;
+    grid-area: right0;
+  }
+  .textContent3
+  {
+    font-family: 'Merriweather';
+    font-size: 20px;
+    color: #ececec;
+    padding:10px;
+    align-self: start;
+    grid-area: left0;
   }
   .footer
   {
