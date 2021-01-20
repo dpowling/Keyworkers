@@ -15,6 +15,10 @@ body{
   overflow-x: hidden; /*This is to stop AOS dissappearing */
 }
 
+nav .navbar-nav li a{
+  color: white !important;
+  }
+
 
 .mainContainer
 {
@@ -69,7 +73,7 @@ body{
   height: 100px;
   background-color: #c98881;
   border-radius: 0.5em;
-  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.1);
 }
 .cdCard p{
   text-align: center;
@@ -84,7 +88,7 @@ body{
   display: grid;
   grid-area: main;
   grid-template-columns: 350px 350px;
-  grid-template-rows: 50vh 50vh 50vh 50vh 60vh;
+  grid-template-rows: 40vh 40vh 40vh 60vh;
   grid-gap: 1em;
   grid-template-areas:
   "left0 right0"
@@ -105,6 +109,7 @@ body{
   "left2 right2"
   "left3 right3"
   "left4 right4";
+  padding-bottom:40px;
 }
 .aboutTitle{
   display: grid;
@@ -148,6 +153,7 @@ body{
   "top"
   "bot";
   justify-content: center;
+  margin-top:30px;
 }
 
 .headerFlag img{
@@ -205,7 +211,16 @@ body{
   font-family: 'Merriweather';
   color: #f1eeee;
   text-shadow:0px 8px 15px rgba(0, 0, 0, 0.1);
-  align-self: start;
+  align-self: center;
+  grid-area: 1 / span 3;
+  text-align:center;
+}
+.mainContent img{
+  border-radius: 0.5rem;
+  height: 280px;
+  width: 280px;
+  margin-top:20px;
+  justify-self: center;
 }
 .mainContent2 h2
 {
@@ -222,6 +237,7 @@ body{
   justify-self:center;
   align-self: center;
 }
+
 .imgCont
 {
   position: relative;
@@ -286,7 +302,7 @@ textarea:focus{
     padding: 1rem 2rem;
     margin-top:20px;
     text-decoration: none;
-    background:#c47207;
+    background:#c98881;
     color: #ffffff;
     font-family: 'Merriweather';
     font-size: 1rem;
@@ -320,10 +336,10 @@ button:focus {
   grid-template-columns:1fr 238.5px 238.5px 238.5px 1fr;
   grid-template-areas:
   ". left center right .";
-  height: 200px;
-  background-color:#767270;
+  height: 230px;
+  background-color:#416165;
   width:100%;
-  padding-top: 40px;
+  padding-top: 10px;
 }
 .footerCol
 {
@@ -331,11 +347,21 @@ button:focus {
   font-family: 'Merriweather';
   font-size: 13px;
   text-align: center;
-  color:#ececec;
+  color:#cfcfcf;
+}
+.footerCol2
+{
+  text-decoration: none;
+  font-family: 'Merriweather';
+  font-size: 13px;
+  text-align: center;
+  color:#cfcfcf;
+  padding-top:35px;
 }
 .footer a{
   text-decoration: none;
   color: inherit;
+  text-align: left;
 }
 .footer a:hover{
   text-decoration: none;
@@ -348,6 +374,7 @@ button:focus {
   margin:0;
   padding:0;
   margin: 10px 10px;
+  text-align: left;
 }
 .footerCol h2
 {
@@ -374,7 +401,7 @@ body.offcanvas-active{
 }
 .navbar /*need to make media queries for this  to adjust to each viewport */
 {
-  padding: 0.5em 20% !important;
+  padding: 0.5em 15% !important;
   min-height: 70px !important;
 }
 
@@ -385,12 +412,12 @@ body.offcanvas-active{
     top:0;
     bottom: 0;
     left: 100%;
-    width: 70%;
+    width: 50%;
     padding-right: 1rem;
     padding-left: 1rem;
     overflow-y: auto;
     visibility: hidden;
-    background-color: #343434;
+    background-color: #8881c9;
     transition: visibility .2s ease-in-out, transform .2s ease-in-out;
     z-index: 500;
   }
@@ -449,43 +476,170 @@ body.offcanvas-active{
 }
 /*End of button */
 @media all and (max-width: 900px){
+  .navbar /*need to make media queries for this  to adjust to each viewport */
+  {
+    padding: 0 !important;
+    min-height: 50px !important;
+  }
   .mainContainer
   {
     display: grid;
-    grid-template-columns: minmax(300px, 900px);
+    grid-template-columns: minmax(375px, 900px);
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
     "hd"
+    "cd"
     "main"
     "ft";
-    background-color: #40434A;
+    background-color: #81c2c9;
     justify-items: center;
+  }
+  .headerFlag
+  {
+    display: grid;
+    grid-template-columns: minmax(375px, 900px);
+    grid-template-rows: 40vh 25vh;
+    /*background-image: url(img/keyworkersHeroFlag2.png);*/
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50% ;
+    position: relative;
+    grid-area:hd;
+    grid-template-areas:
+    "top"
+    "bot";
+    justify-content: center;
+    margin-top:15px;
+  }
+
+  .headerFlag img{
+    position: relative;
+    display: block;
+    border-radius: 0.7em;
+    height: 27vh;
+    width: 85%;
+    justify-self:center;
+    align-self: center;
+    margin-top: 0px;
+  }
+
+  .headerFlag p{
+    text-align: center;
+    font-size: 20px;
+    height:15vh;
+    padding:15px;
+  }
+  .cdContent
+  {
+    display: grid;
+    grid-area: cd;
+    grid-template-columns: minmax(375px, 900px);
+    grid-template-rows: 25vh 120vh;
+    grid-gap: 1em;
+    grid-template-areas:
+    "leftcd"
+    "rightcd"
+    ;
+    padding-top:35px;
+  }
+
+  .cdContent h2
+  {
+    font-size: 65px;
+    text-align: center;
+    font-family: 'Merriweather';
+    color: #f1eeee;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .cdCardContainer{
+    display: grid;
+    width: 100%; /* remember to tell the div it can use either 100% or whatever you want */
+    height:100%;
+    grid-gap: 1em;
+    font-family: 'Merriweather';
+    grid-area: rightcd;
+    grid-template-areas:
+    "l1"
+    "r1"
+    "l2"
+    "r2"
+    "l3"
+    "r3"
+    "l4"
+    "r4"
+    ;
+    align-self: center;
+    justify-content: center;
+  }
+  .cdCard{
+    width: 246px;
+    height: 100px;
+    background-color: #c98881;
+    border-radius: 0.5em;
+    box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.1);
   }
 
   .mainContent
   {
     display: grid;
     grid-area: main;
-    grid-template-columns: minmax(280px, 560px);
-    grid-template-rows:repeat(8, 50vh);
+    grid-template-columns: minmax(375px, 900px);
+    grid-template-rows:30vh 40vh 35vh 40vh 40vh 25vh 65vh;
     grid-gap: 0.5em;
     grid-template-areas:
-    "left1"
+    "left0"
     "right1"
-    "right2"
+    "left1"
     "left2"
+    "right2"
     "left3"
     "right3"
-    "right4"
-    "left4"
     ;
     padding-bottom: 2.3em;
+  }
+  .mainContent h2
+  {
+    font-size: 65px;
+    font-family: 'Merriweather';
+    color: #f1eeee;
+    text-shadow:0px 8px 15px rgba(0, 0, 0, 0.1);
+    align-self: center;
+    grid-area: left0;
+    text-align:center;
+    padding: 10px 20px 10px 20px;
+    margin:0;
+  }
+  .mainConImg{
+
+  }
+  .mainConImg img{
+    border-radius: 0.5rem;
+    height: 280px;
+    width: 280px;
+    margin-top:20px;
+    justify-self: center;
+    align-self: right;
+  }
+
+  .mainConImg{
+
+  }
+  .formContainer{
+    display: flex;
+    text-align: left;
+    width: 90%; /* remember to tell the div it can use either 100% or whatever you want */
+    height:510px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+    font-family: 'Merriweather';
+    justify-self:center;
   }
   .mainContent2
   {
     display: grid;
     grid-area: main;
-    grid-template-columns: minmax(280px, 560px);
+    grid-template-columns: minmax(375px, 560px);
     grid-template-rows:repeat(8, 50vh);
     grid-gap: 0.5em;
     grid-template-areas:
@@ -504,18 +658,39 @@ body.offcanvas-active{
   {
     display: grid;
     grid-area: ft;
-    grid-template-columns: minmax(280px, 900px);
-    grid-template-rows:repeat(3, 150px);
+    grid-template-columns: minmax(375px, 900px);
+    grid-template-rows:190px 150px 200px;
     grid-gap: 0.5em;
     grid-template-areas:
     "left"
     "center"
     "right";
-    height: auto;
+    height: 590px;
     width: auto;
     margin-top: 30px;
     text-align: center;
   }
+  .footerCol
+  {
+    text-align: center;
+  }
+  .footerCol2
+  {
+    text-align: center;
+    padding-top:0;
+    margin-top:0;
+  }
+  .footer ul
+  {
+    text-align: center;
+    padding:0;
+    margin:0;
+  }
+    .footer a{
+      text-decoration: none;
+      color: inherit;
+      text-align: center;
+    }
   @media (orientation: landscape){
     .mainContent{
       grid-template-rows:60vh 60vh 60vh 60vh 60vh 60vh 60vh 90vh;
