@@ -12,7 +12,8 @@ body{
 }
 .wrapper
 {
-  overflow-x: visible; /*This is to stop AOS dissappearing */
+  overflow-x: visible;
+  overflow-y: hidden;/*This is to stop AOS dissappearing */
 }
 
 nav .navbar-nav li a{
