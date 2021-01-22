@@ -100,7 +100,7 @@ nav .navbar-nav li a{
   display: grid;
   grid-area: main;
   grid-template-columns: 350px 350px;
-  grid-template-rows: 40vh 40vh 40vh 60vh;
+  grid-template-rows: 30vh 40vh 40vh 70vh;
   grid-gap: 1em;
   grid-template-areas:
   "left0 right0"
@@ -113,7 +113,7 @@ nav .navbar-nav li a{
   display: grid;
   grid-area: main;
   grid-template-columns: 350px 350px;
-  grid-template-rows: 64vh 15vh 40vh 40vh 40vh;
+  grid-template-rows: 50vh 15vh 40vh 40vh 40vh;
   grid-gap: 1em;
   grid-template-areas:
   "left0 right0"
@@ -356,12 +356,29 @@ button:focus {
   display: grid;
   grid-area:ft;
   grid-template-columns:1fr 238.5px 238.5px 238.5px 1fr;
+  grid-template-rows: 230px 48px;
   grid-template-areas:
-  ". left center right .";
-  height: 230px;
+  ". left center right ."
+  "fC fC fC fC fC";
+  height: 270px;
   background-color:#416165;
   width:100%;
-  padding-top: 10px;
+}
+.footerFooter
+{
+  text-decoration: none;
+  font-family: 'Merriweather';
+  text-align: center;
+  color:#cfcfcf;
+  background-color: #31494c;
+  grid-area:fC;
+  height: 100%;
+}
+.footerFooter p
+{
+  margin-top:13px;
+  margin-bottom:0;
+  font-size: 10px;
 }
 .footerCol
 {
@@ -679,7 +696,7 @@ body.offcanvas-active{
     display: grid;
     grid-area: main;
     grid-template-columns: minmax(375px, 900px);
-    grid-template-rows:100vh 30vh 50vh 30vh 50vh 30vh 50vh 30vh;
+    grid-template-rows: 100vh 30vh 50vh 30vh 50vh 30vh 50vh 30vh;
     grid-gap: 0.5em;
     grid-template-areas:
     "left0"
@@ -718,13 +735,14 @@ body.offcanvas-active{
     display: grid;
     grid-area: ft;
     grid-template-columns: minmax(375px, 900px);
-    grid-template-rows:190px 150px 200px;
+    grid-template-rows:190px 150px 200px 48px;
     grid-gap: 0.5em;
     grid-template-areas:
     "left"
     "center"
-    "right";
-    height: 590px;
+    "right"
+    "fC";
+    height: 600px;
     width: auto;
     margin-top: 30px;
     text-align: center;
@@ -741,8 +759,8 @@ body.offcanvas-active{
   }
   .footer ul
   {
-    text-align: center;
-    padding:0;
+    text-align: left;
+    padding:0 0 0 90px;
     margin:0;
   }
     .footer a{
