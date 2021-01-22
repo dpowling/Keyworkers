@@ -6,9 +6,8 @@ body, html
 
 }
 body{
-  position: relative; /* Ensures that the body won't have horizontal scroll */
-  overflow-x: hidden; /*had a secondary scroll bar when set to hidden */
-  width:100%;
+  position: relative;
+  width:100%; /* Ensures that the body won't have horizontal scroll */
 }
 .wrapper
 {
