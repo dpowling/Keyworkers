@@ -993,8 +993,8 @@ body.offcanvas-active{
     {
       display: grid;
       grid-area: main;
-      grid-template-columns: 350px 350px;
-      grid-template-rows: 140vh 20vh 90vh 90vh 90vh;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 150vh 20vh 90vh 90vh 90vh;
       grid-gap: 1em;
       grid-template-areas:
       "left0 right0"
