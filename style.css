@@ -7,12 +7,12 @@ body, html
 }
 body{
   position: relative; /* Ensures that the body won't have horizontal scroll */
-  overflow-x: hidden;
+  overflow-x: visible; /*had a secondary scroll bar when set to hidden */
   width:100%;
 }
 .wrapper
 {
-  overflow-x: hidden; /*This is to stop AOS dissappearing */
+  overflow-x: visible; /*This is to stop AOS dissappearing */
 }
 
 nav .navbar-nav li a{
