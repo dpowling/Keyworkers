@@ -983,6 +983,9 @@ body.offcanvas-active{
       margin:0;
       font-size: 65px;
     }
+    .formContainer{
+      height:535px;
+    }
     .aboutTitle{
       grid-template-rows:50vh;
     }
