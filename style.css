@@ -65,6 +65,7 @@ nav .navbar-nav li a{
   text-align: center;
   font-family: 'Merriweather';
   color: #f1eeee;
+  grid-area:leftcd;
 }
 .cdCardContainer{
   display: grid;
@@ -235,6 +236,7 @@ nav .navbar-nav li a{
   align-self: center;
   grid-area: 1 / span 3;
   text-align:center;
+  padding-top:50px;
 }
 .mainContent img{
   border-radius: 0.5rem;
@@ -514,7 +516,76 @@ body.offcanvas-active{
   56% {left: 0}
 }
 /*End of button */
+
+/*Start of Ipad and various device formatting*/
 @media all and (max-width: 900px){
+  .headerFlag img
+  {
+    height: 30vh;
+    width: 90%;
+    justify-self:center;
+    align-self: center;
+  }
+  .cdContent
+  {
+    grid-template-columns: 250px 470px;
+  }
+  .cdCard
+  {
+    width: 220px;
+  }
+  .mainContent
+  {
+    grid-template-rows: 18vh 30vh 30vh 52vh;
+  }
+  .headerFlag
+  {
+    grid-template-rows: 40vh 13vh;
+  }
+  .headerFlag img
+  {
+    height: 30vh;
+    width: 90%;
+    justify-self:center;
+    align-self: center;
+  }
+  .aboutTitle
+  {
+    grid-template-rows: 22vh;
+  }
+  .mainContent2
+  {
+    grid-template-rows: 45vh 12vh 30vh 30vh 30vh;
+  }
+}
+/*Ipad 12 code */
+@media all and (max-width: 1024px) and (min-width: 1024px){
+  .mainContent
+  {
+    grid-template-rows: 18vh 25vh 25vh 45vh;
+  }
+  .headerFlag
+  {
+    grid-template-rows: 40vh 13vh;
+  }
+  .headerFlag img
+  {
+    height: 30vh;
+    width: 90%;
+    justify-self:center;
+    align-self: center;
+  }
+  .aboutTitle
+  {
+    grid-template-rows: 17vh;
+  }
+  .mainContent2
+  {
+    grid-template-rows: 34vh 8vh 23vh 23vh 23vh;
+  }
+}
+
+@media all and (max-width: 420px){
   .navbar /*need to make media queries for this  to adjust to each viewport */
   {
     padding: 0 !important;
@@ -523,7 +594,7 @@ body.offcanvas-active{
   .mainContainer
   {
     display: grid;
-    grid-template-columns: minmax(375px, 900px);
+    grid-template-columns: minmax(355px, 900px);
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
     "hd"
@@ -536,7 +607,7 @@ body.offcanvas-active{
   .mainContainer2
   {
     display: grid;
-    grid-template-columns: minmax(375px, 900px);
+    grid-template-columns: minmax(355px, 900px);
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
     "hd"
@@ -548,7 +619,7 @@ body.offcanvas-active{
   .headerFlag
   {
     display: grid;
-    grid-template-columns: minmax(375px, 900px);
+    grid-template-columns: minmax(355px, 900px);
     grid-template-rows: 40vh 25vh;
     /*background-image: url(img/keyworkersHeroFlag2.png);*/
     width: 100%;
@@ -584,7 +655,7 @@ body.offcanvas-active{
   {
     display: grid;
     grid-area: cd;
-    grid-template-columns: minmax(375px, 900px);
+    grid-template-columns: minmax(355px, 900px);
     grid-template-rows: 25vh 140vh;
     grid-gap: 1em;
     grid-template-areas:
@@ -635,7 +706,7 @@ body.offcanvas-active{
   {
     display: grid;
     grid-area: main;
-    grid-template-columns: minmax(375px, 900px);
+    grid-template-columns: minmax(355px, 900px);
     grid-template-rows:40vh 47vh 40vh 47vh 50vh 30vh 75vh;
     grid-gap: 0.5em;
     grid-template-areas:
@@ -673,7 +744,7 @@ body.offcanvas-active{
   }
   .aboutTitle{
     display: grid;
-    grid-template-columns: minmax(375px, 900px);
+    grid-template-columns: minmax(355px, 900px);
     grid-template-rows: 35vh;
     width: 100%;
     background-size: cover;
@@ -695,7 +766,7 @@ body.offcanvas-active{
   {
     display: grid;
     grid-area: main;
-    grid-template-columns: minmax(375px, 900px);
+    grid-template-columns: minmax(355px, 900px);
     grid-template-rows: 100vh 30vh 50vh 30vh 50vh 30vh 50vh 30vh;
     grid-gap: 0.5em;
     grid-template-areas:
@@ -734,15 +805,15 @@ body.offcanvas-active{
   {
     display: grid;
     grid-area: ft;
-    grid-template-columns: minmax(375px, 900px);
-    grid-template-rows:190px 150px 200px 48px;
+    grid-template-columns: minmax(355px, 900px);
+    grid-template-rows:200px 190px 155px 48px;
     grid-gap: 0.5em;
     grid-template-areas:
+    "right"
     "left"
     "center"
-    "right"
     "fC";
-    height: 600px;
+    height: 620px;
     width: auto;
     margin-top: 30px;
     text-align: center;
@@ -768,10 +839,168 @@ body.offcanvas-active{
       color: inherit;
       text-align: center;
     }
-  @media (orientation: landscape){
-    .mainContent{
-      grid-template-rows:60vh 60vh 60vh 60vh 60vh 60vh 60vh 90vh;
-    }
-  }
 
 }
+/*iphone plus formatting */
+@media all and (max-width: 414px) and (min-width: 414px){
+  .cdContent{
+    grid-template-rows: 25vh 120vh;
+  }
+  .mainContent{
+    grid-template-rows:35vh 40vh 35vh 40vh 35vh 25vh 68vh;
+  }
+  .mainContent2{
+    grid-template-rows:80vh 25vh 40vh 25vh 40vh 25vh 40vh 25vh;
+  }
+}
+@media all and (max-height: 820px) and (min-height: 811px)
+{
+  .headerFlag{
+    grid-template-rows: 28vh 18vh;
+    padding-top:35px;
+  }
+  .cdContent{
+    grid-template-rows: 25vh 113vh;
+  }
+  .mainContent{
+    grid-template-rows: 30vh 39vh 35vh 39vh 38vh 27vh 60vh;
+  }
+  .mainContent h2{
+    padding:0;
+    margin:0;
+  }
+  .mainContent2{
+    grid-template-rows: 80vh 25vh 32vh 25vh 32vh 25vh 32vh 25vh;
+    padding:0;
+  }
+  .aboutTitle{
+    grid-template-rows:28vh;
+  }
+}
+@media all and (max-height: 896px) and (min-height: 813px){
+  .cdContent{
+    grid-template-rows: 20vh 104vh;
+  }
+  .mainContent{
+    grid-template-rows: 30vh 34vh 30vh 34vh 30vh 22vh 60vh;
+  }
+  .aboutTitle{
+    grid-template-rows: 25vh;
+  }
+  .mainContent2{
+    grid-template-rows: 65vh 25vh 30vh 25vh 30vh 25vh 30vh 25vh;
+  }
+
+
+}
+  @media (orientation: landscape){
+    .headerFlag img{
+      width: 100%;
+      height: 100%;
+      margin-top:80px;
+    }
+    .headerFlag{
+      align-self: center;
+      justify-self:center;
+      grid-template-rows: 60vh 20vh;
+    }
+    .headerFlag p{
+      margin-top: 50px;
+    }
+    .mainContent
+    {
+      display: grid;
+      grid-area: main;
+      grid-template-columns: 350px 350px;
+      grid-template-rows: 30vh 40vh 40vh 70vh;
+      grid-gap: 1em;
+      grid-template-areas:
+      "left0 right0"
+      "left1 right1"
+      "left2 right2"
+      "left3 right3";
+    }
+    .mainContent2
+    {
+      display: grid;
+      grid-area: main;
+      grid-template-columns: 350px 350px;
+      grid-template-rows: 50vh 15vh 40vh 40vh 40vh;
+      grid-gap: 1em;
+      grid-template-areas:
+      "left0 right0"
+      "left1 right1"
+      "left2 right2"
+      "left3 right3"
+      "left4 right4";
+      padding-bottom:40px;
+    }
+  }
+  @media only screen and (max-width:900px) and (max-height:415px){
+    .headerFlag{
+      grid-template-rows: 70vh 39vh;
+    }
+    .headerFlag img{
+      width: 70%;
+      height: 80%;
+      margin:30px 0 0 0;
+    }
+    .headerFlag p{
+      height: 40vh;
+      margin:20px 30px 0 30px;
+    }
+    .cdContent{
+      grid-template-columns: minmax(230px, 600px);
+      grid-template-rows: 30vh 125vh;
+      grid-template-areas:
+      "leftcd"
+      "rightcd";
+      padding-top:30px;
+    }
+    .cdContent h2{
+      font-size: 55px;
+    }
+    .cdCard{
+      align-self: center;
+      justify-self:center;
+    }
+    .mainContent
+    {
+      display: grid;
+      grid-area: main;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 50vh 86vh 86vh 150vh;
+      grid-gap: 1em;
+      grid-template-areas:
+      "left0 right0"
+      "left1 right1"
+      "left2 right2"
+      "left3 right3";
+    }
+    .mainContent h2{
+      padding:0;
+      margin:0;
+      font-size: 65px;
+    }
+    .aboutTitle{
+      grid-template-rows:50vh;
+    }
+    .aboutTitle p {
+      margin-top:75px;
+    }
+    .mainContent2
+    {
+      display: grid;
+      grid-area: main;
+      grid-template-columns: 350px 350px;
+      grid-template-rows: 140vh 20vh 90vh 90vh 90vh;
+      grid-gap: 1em;
+      grid-template-areas:
+      "left0 right0"
+      "left1 right1"
+      "left2 right2"
+      "left3 right3"
+      "left4 right4";
+      padding-bottom:40px;
+    }
+  }
