@@ -156,7 +156,7 @@ nav .navbar-nav li a{
 {
   display: grid;
   grid-template-columns: minmax(500px, 900px);
-  grid-template-rows: 70vh 15vh;
+  grid-template-rows: 70vh 18vh;
   /*background-image: url(img/keyworkersHeroFlag2.png);*/
   width: 100%;
   background-size: cover;
@@ -533,11 +533,11 @@ body.offcanvas-active{
   }
   .mainContent
   {
-    grid-template-rows: 18vh 30vh 30vh 52vh;
+    grid-template-rows: 18vh 32vh 32vh 57vh;
   }
   .headerFlag
   {
-    grid-template-rows: 40vh 13vh;
+    grid-template-rows: 40vh 20vh;
   }
   .headerFlag img
   {
@@ -545,6 +545,10 @@ body.offcanvas-active{
     width: 90%;
     justify-self:center;
     align-self: center;
+  }
+  .headerFlag p{
+    font-size: 20px;
+    padding: 30px 70px 0 70px;
   }
   .aboutTitle
   {
@@ -559,7 +563,7 @@ body.offcanvas-active{
 @media all and (max-width: 1024px) and (min-width: 1024px){
   .mainContent
   {
-    grid-template-rows: 18vh 25vh 25vh 45vh;
+    grid-template-rows: 18vh 40vh 40vh 73vh;
   }
   .headerFlag
   {
@@ -574,11 +578,11 @@ body.offcanvas-active{
   }
   .aboutTitle
   {
-    grid-template-rows: 17vh;
+    grid-template-rows: 27vh;
   }
   .mainContent2
   {
-    grid-template-rows: 34vh 8vh 23vh 23vh 23vh;
+    grid-template-rows: 68vh 20vh 40vh 40vh 40vh;
   }
 }
 
@@ -899,7 +903,7 @@ body.offcanvas-active{
 
 
 }
-  @media (orientation: landscape){
+  /*@media (orientation: landscape){
     .headerFlag img{
       width: 100%;
       height: 100%;
@@ -941,7 +945,7 @@ body.offcanvas-active{
       "left4 right4";
       padding-bottom:40px;
     }
-  }
+  } */
   @media only screen and (max-width:900px) and (max-height:414px){
     .headerFlag{
       grid-template-rows: 70vh 39vh;
