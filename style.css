@@ -240,7 +240,7 @@ nav .navbar-nav li a{
   align-self: center;
   grid-area: 1 / span 3;
   text-align:center;
-  padding-top:50px;
+  padding:110px 0 10px 0;
 }
 .mainContent img{
   border-radius: 0.5rem;
@@ -362,12 +362,12 @@ button:focus {
 {
   display: grid;
   grid-area:ft;
-  grid-template-columns:1fr 238.5px 238.5px 238.5px 1fr;
-  grid-template-rows: 230px 48px;
+  grid-template-columns:1fr 238.5px 238.5px 1fr;
+  grid-template-rows: 150px 48px;
   grid-template-areas:
-  ". left center right ."
-  "fC fC fC fC fC";
-  height: 272px;
+  ". left right ."
+  "fC fC fC fC";
+  height: 198px;
   background-color:#416165;
   width:100%;
 }
@@ -395,15 +395,7 @@ button:focus {
   text-align: center;
   color:#cfcfcf;
 }
-.footerCol2
-{
-  text-decoration: none;
-  font-family: 'Merriweather';
-  font-size: 13px;
-  text-align: center;
-  color:#cfcfcf;
-  padding-top:35px;
-}
+
 .footer a{
   text-decoration: none;
   color: inherit;
@@ -524,13 +516,6 @@ body.offcanvas-active{
 
 /*Start of Ipad and various device formatting*/
 @media all and (max-width: 900px){
-  .headerFlag img
-  {
-    height: 30vh;
-    width: 90%;
-    justify-self:center;
-    align-self: center;
-  }
   .cdContent
   {
     grid-template-columns: 250px 470px;
@@ -545,7 +530,7 @@ body.offcanvas-active{
   }
   .headerFlag
   {
-    grid-template-rows: 40vh 20vh;
+    grid-template-rows: 39vh 10vh;
   }
   .headerFlag img
   {
@@ -816,14 +801,13 @@ body.offcanvas-active{
     display: grid;
     grid-area: ft;
     grid-template-columns: minmax(355px, 900px);
-    grid-template-rows:200px 190px 155px 48px;
+    grid-template-rows:110px 130px 48px;
     grid-gap: 0.5em;
     grid-template-areas:
-    "right"
     "left"
-    "center"
+    "right"
     "fC";
-    height: 617px;
+    height: 298px;
     width: auto;
     margin-top: 30px;
     text-align: center;
@@ -863,7 +847,7 @@ body.offcanvas-active{
     grid-template-rows:80vh 25vh 40vh 25vh 40vh 25vh 40vh 25vh;
   }
   .headerFlag{
-    grid-template-rows: 30vh 21vh;
+    grid-template-rows: 35vh 18vh;
   }
   .headerFlag img{
     margin-top: 30px;
@@ -875,14 +859,14 @@ body.offcanvas-active{
 @media all and (max-height: 820px) and (min-height: 811px)
 {
   .headerFlag{
-    grid-template-rows: 28vh 18vh;
+    grid-template-rows: 33vh 18vh;
     padding-top:35px;
   }
   .cdContent{
-    grid-template-rows: 25vh 113vh;
+    grid-template-rows: auto auto;
   }
   .mainContent{
-    grid-template-rows: 30vh 39vh 35vh 39vh 38vh 27vh 60vh;
+    grid-template-rows: auto auto auto auto auto auto auto;
   }
   .mainContent h2{
     padding:0;
@@ -898,10 +882,10 @@ body.offcanvas-active{
 }
 @media all and (max-height: 896px) and (min-height: 813px){
   .cdContent{
-    grid-template-rows: 20vh 104vh;
+    grid-template-rows: auto auto;
   }
   .mainContent{
-    grid-template-rows: 30vh 34vh 30vh 34vh 30vh 22vh 60vh;
+    grid-template-rows: auto auto auto auto auto auto auto;
   }
   .aboutTitle{
     grid-template-rows: 25vh;
