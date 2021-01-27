@@ -7,6 +7,7 @@ body
   margin: 0;
   padding: 0;
   position: relative;
+  overflow-x:hidden;
 }
 
 .wrapper
@@ -103,13 +104,14 @@ nav .navbar-nav li a{
   display: grid;
   grid-area: main;
   grid-template-columns: 350px 350px;
-  grid-template-rows: 30vh 40vh 40vh 70vh;
+  grid-template-rows: auto auto auto auto;
   grid-gap: 1em;
   grid-template-areas:
   "left0 right0"
   "left1 right1"
   "left2 right2"
   "left3 right3";
+  padding-bottom: 30px;
 }
 .mainContent2
 {
@@ -359,7 +361,7 @@ button:focus {
   grid-template-areas:
   ". left center right ."
   "fC fC fC fC fC";
-  height: 270px;
+  height: 272px;
   background-color:#416165;
   width:100%;
 }
@@ -375,7 +377,7 @@ button:focus {
 }
 .footerFooter p
 {
-  margin-top:13px;
+  margin-top:10px;
   margin-bottom:0;
   font-size: 10px;
 }
@@ -563,7 +565,8 @@ body.offcanvas-active{
 @media all and (max-width: 1024px) and (min-width: 1024px){
   .mainContent
   {
-    grid-template-rows: 18vh 40vh 40vh 73vh;
+    grid-template-rows: auto auto auto auto;
+    padding-bottom:20px;
   }
   .headerFlag
   {
@@ -596,7 +599,7 @@ body.offcanvas-active{
   {
     display: grid;
     grid-template-columns: minmax(355px, 900px);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
     grid-template-areas:
     "hd"
     "cd"
@@ -1015,5 +1018,94 @@ body.offcanvas-active{
       "left3 right3"
       "left4 right4";
       padding-bottom:40px;
+    }
+  }
+  @media only screen and (max-width:900px) and (max-height:700px){
+    .headerFlag{
+      grid-template-rows: 50vh 20vh;
+    }
+    .headerFlag p{
+      padding: 0px 30px 0 30px;
+      font-size: 15px;
+    }
+
+    .mainContent
+    {
+      display: grid;
+      grid-area: main;
+      grid-template-columns: minmax(230px, 900px);
+      grid-template-rows: 40vh 55vh 55vh 80vh;
+      grid-gap: 1em;
+      grid-template-areas:
+      "left0"
+      "right1"
+      "left1"
+      "left2"
+      "right2"
+      "left3"
+      "right3"
+      ;
+    }
+    .mainContent h2{
+      font-size: 60px;
+    }
+    .mainContent img{
+      align-self: center;
+    }
+
+    .cdContent{
+      grid-template-columns: minmax(230px, 600px);
+      grid-template-rows: 40vh 90vh;
+      grid-template-areas:
+      "leftcd"
+      "rightcd";
+      padding-top:30px;
+    }
+    .cdCard{
+      align-self: center;
+      justify-self:center;
+    }
+  }
+  @media only screen and (max-width:900px) and (max-height:900px){
+    .headerFlag img{
+      width: 70%;
+    }
+    .mainContent
+    {
+      display: grid;
+      grid-area: main;
+      grid-template-columns: minmax(230px, 900px);
+      grid-template-rows: auto auto auto auto;
+      grid-gap: 1em;
+      grid-template-areas:
+      "left0"
+      "right1"
+      "left1"
+      "left2"
+      "right2"
+      "left3"
+      "right3"
+      ;
+    }
+    .mainContent p{
+      text-align: center;
+    }
+    .cdContent{
+      grid-template-columns: minmax(230px, 600px);
+      grid-template-rows: auto auto;
+      grid-template-areas:
+      "leftcd"
+      "rightcd";
+      padding-top:30px;
+      padding-bottom:40px;
+    }
+    .cdCard{
+      align-self: center;
+      justify-self:center;
+    }
+    .formContainer{
+      width: 60%;
+      align-self: center;
+      justify-self: center;
     }
   }
