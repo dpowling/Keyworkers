@@ -112,6 +112,8 @@ nav .navbar-nav li a{
   "left2 right2"
   "left3 right3";
   padding-bottom: 30px;
+  align-items: center;
+  justify-content: center;
 }
 .mainContent2
 {
@@ -127,6 +129,10 @@ nav .navbar-nav li a{
   "left3 right3"
   "left4 right4";
   padding-bottom:40px;
+}
+.mainContent p{
+  font-size: 20px;
+
 }
 .aboutTitle{
   display: grid;
@@ -1104,7 +1110,7 @@ body.offcanvas-active{
       justify-self:center;
     }
     .formContainer{
-      width: 60%;
+      width: 80%;
       align-self: center;
       justify-self: center;
     }
