@@ -364,7 +364,7 @@ button:focus {
   grid-template-areas:
   ". left right ."
   "fC fC fC fC";
-  height: 198px;
+  height: 195px;
   background-color:#416165;
   width:100%;
 }
