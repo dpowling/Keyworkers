@@ -146,14 +146,27 @@ crossorigin="anonymous"></script>
               it has to be an appropriate email address for submission -->
           </li>
           <li>
+            <label for="cName">Childs DOB:</label>
+            <input type="cDOB" id="cDOB" name="child_DOB">
+          </li>
+          <li>
+            <label for="cName">Location:</label>
+            <br><!-- puts drop down on new line -->
+            <select type="location" id="location" name="location">
+              <option value = "North Canberra">North Canberra</option>
+              <option value = "South Canberra">South Canberra</option>
+              <option value = "Queanbeyan">Queanbeyan</option>
+              <option value = "Bungendore">Bungendore</option>
+              <option value = "Other">Other</option>
+            </select>
+          </li>
+          <li>
             <label for="pNumber">Phone Number:</label>
-            <input type="pNumber" id="pNumber" name="phone_number"> <!-- by stating the type as email, it doesn't just allow normal text,
-              it has to be an appropriate email address for submission -->
+            <input type="pNumber" id="pNumber" name="phone_number">
           </li>
           <li>
             <label for="mail">Email:</label>
-            <input type="email" id="e-mail" name="user_email"> <!-- by stating the type as email, it doesn't just allow normal text,
-              it has to be an appropriate email address for submission -->
+            <input type="email" id="e-mail" name="user_email">
           </li>
           <li>
             <label style="font-size:14px;" for="msg">Tell us about what you are looking for:</label>

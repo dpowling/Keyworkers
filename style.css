@@ -275,7 +275,7 @@ nav .navbar-nav li a{
   display: flex;
   text-align: left;
   width: 100%; /* remember to tell the div it can use either 100% or whatever you want */
-  height:510px;
+  height:auto;
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 0.5em;
   font-family: 'Merriweather';
@@ -314,8 +314,11 @@ textarea {
 }
 .formContainer select{
   border-radius: 0.4em;
-  height:30px;
   font-size: 16px;
+  height: 2.5em;
+  background-color: #d4d4d4;
+  margin-bottom: 0.2em;
+  width: 100%;
 }
 .formContainer input:focus,
 textarea:focus{
@@ -523,7 +526,7 @@ body.offcanvas-active{
   }
   .mainContent
   {
-    grid-template-rows: 18vh 32vh 32vh 57vh;
+    grid-template-rows: 18vh 32vh 32vh auto;
   }
   .headerFlag
   {
@@ -721,7 +724,7 @@ body.offcanvas-active{
     display: flex;
     text-align: left;
     width: 90%; /* remember to tell the div it can use either 100% or whatever you want */
-    height:510px;
+    height:auto;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 0.5em;
     font-family: 'Merriweather';
@@ -932,7 +935,7 @@ body.offcanvas-active{
       font-size: 65px;
     }
     .formContainer{
-      height:535px;
+      height:auto;
     }
     .aboutTitle{
       grid-template-rows:50vh;
